@@ -23,8 +23,8 @@
         .container {
             max-width: 100%;
             width: 1240px;
-            margin: 0px auto;
-            padding: 0px 20px;
+            margin: 0 auto;
+            padding: 0 20px;
             -webkit-box-flex: 1;
             flex-grow: 1;
             display: flex;
@@ -32,6 +32,13 @@
             -webkit-box-align: center;
             align-items: center;
             gap: 128px;
+        }
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 64px;
+            width: 100%;
         }
 
         .text-container {
@@ -53,13 +60,16 @@
 </head>
 <body>
 <div class="container">
-    <div class="text-container">
-        <h2 class="title">In progress now</h2>
-        <strong class="subtitle">We are working on these features right now.</strong>
-    </div>
-    <div class="text-container">
-        <h2 class="title">Next planned</h2>
-        <strong class="subtitle">Those are the features that are planned for the next few months. They are ordered by priority.</strong>
+    <div class="text-wrapper">
+        <div class="text-container">
+            <h2 class="title">In progress now</h2>
+            <strong class="subtitle">We are working on these features right now.</strong>
+        </div>
+        <div class="text-container">
+            <h2 class="title">Next planned</h2>
+            <strong class="subtitle">Those are the features that are planned for the next few months. They are ordered
+                by priority.</strong>
+        </div>
     </div>
 </div>
 </body>

@@ -22,10 +22,30 @@
             font-family: 'Roboto', sans-serif;
         }
 
+        .container {
+            max-width: 100%;
+            width: 1240px;
+            margin: 0px auto;
+            padding: 0px 20px;
+            -webkit-box-flex: 1;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            gap: 128px;
+        }
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
         .title {
             font-size: 42px;
-            font-weight:700;
-            line-height:1.25em
+            font-weight: 700;
+            line-height: 1.25em
         }
 
         .subtitle {
@@ -34,7 +54,15 @@
     </style>
 </head>
 <body>
-    <h2 class="title">In progress now</h2>
-    <strong class="subtitle">We are working on these features right now.</strong>
+<div class="container">
+    <div class="text-container">
+        <h2 class="title">In progress now</h2>
+        <strong class="subtitle">We are working on these features right now.</strong>
+    </div>
+    <div class="text-container">
+        <h2 class="title">Next planned</h2>
+        <strong class="subtitle">Those are the features that are planned for the next few months. They are ordered by priority.</strong>
+    </div>
+</div>
 </body>
 </html>
